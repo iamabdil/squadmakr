@@ -1,13 +1,211 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f4f7;
+  color: #333;
+}
+
+/* Header */
+
+.App-header {
+  background-color: white;
+  height: 100px;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  color: black;
+}
+
+/* Banner */
+
+.banner {
+  display: flex;
+  height: 450px;
+}
+
+.banner-desc {
+  background-color: #847aff;
+  color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-img {
+  background-color: wheat;
+  flex: 1;
+}
+
+.banner-desc p {
+  font-size: 2.6rem;
+  white-space: pre-line;
+  font-weight: lighter;
+}
+
+.banner-desc h1 {
+  font-size: 3.2rem;
+}
+
+/* rest of page */
+
+.rest-of-page {
+  margin: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Input Container */
+
+.container-template {
+  background-color: white;
+  width: 500px;
+  padding: 4rem;
+  border-radius: 2rem;
+  margin: 0 0 2rem 0;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, #f1f4f7 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+}
+
+.input-setup {
+  flex: 1;
+  margin: 0 3rem;
+}
+
+.input-players {
+  flex: 1;
+  margin: 0 3rem;
+}
+
+.form-label {
+  font-size: 1.5rem;
+}
+
+.form-input {
+  margin: 0.6rem 0;
+}
+
+.field {
+  padding-bottom: 0.5rem;
+}
+
+.player-input {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.player-input > div {
+  margin: 0.5rem;
+}
+
+.field input {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 44px;
+  border: unset;
+  border-radius: 0.5rem;
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+.field-score {
+  width: 20%;
+}
+
+.field-checkbox {
+  padding: 0;
+}
+
+.field-checkbox input {
+  width: 20px;
+  height: 15px;
+  margin-right: 5px;
+  box-shadow: unset;
+  min-height: unset;
+}
+.field-checkbox label {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+label {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: block;
+}
+
+input[type="submit"] {
+  background-color: #847aff;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgb(84, 105, 212) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.add-player-btn {
+  background-color: black;
+  color: white;
+  border: 0;
+  border-radius: 2rem;
+  width: 10rem;
+  height: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* .App {
+  text-align: center;
+} */
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
